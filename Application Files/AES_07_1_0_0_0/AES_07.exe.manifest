@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AES_07.exe" version="1.0.0.0" publicKeyToken="e7cd42b0c7b2e5e9" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AES_07" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AES_07.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 資訊清單選項
+          如果您要變更 Windows 使用者帳戶控制層級，請將 
+          requestedExecutionLevel 節點取代為下列其中一項。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         如果您要利用檔案及登錄模擬，
+         以便提供回溯相容性，則請刪除 requestedExecutionLevel 節點。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AES_07.exe" size="19344">
+      <assemblyIdentity name="AES_07" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ae3fgaxH3M6MOgwliCQjHUHT1Pj8wmPtcnKC6PHVYG0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DropNet.dll" size="57344">
+      <assemblyIdentity name="DropNet" version="1.10.23.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dmxTzbRQwN4NIOKnEHD80FO/N+v/Lizf/A7KC4wpwSE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nemiro.OAuth.dll" size="126976">
+      <assemblyIdentity name="Nemiro.OAuth" version="1.10.45.895" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iixZEhzbGxVDaluCJM9wqH9f5liioaxfijq7xzAE2vo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nemiro.OAuth.LoginForms.dll" size="2139648">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms" version="1.4.45.1485" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>R8yU9dnSy2zizz5DQ8NpDn/fsx5C54le9tKlr9WHy6s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ar\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="ar" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qrvytW1JsPMBwN/mpRxJ6JbpPIKOY1G71+2fEbSPY8I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="az\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="az" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iubnv+i/Xl8nc4v0m6hgmXU4TjrQyJbc6+y0q73+hYg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="be\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="be" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GGHa9GlxyATPu+Ke23N+EtFzc+z5s2Vyr03yAtGyOpk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bg\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="bg" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hOYKPGwT7iNV5Xuh+PL2Cwo42G0NCirSL8CSJJnmTSg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cs\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="cs" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>653irthBBU/hjMascKwIU2Su/0hXr5mOh4wu01t+k+U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="da\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="da" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fm4R4i3UVmtnjru1r625+YxmhJ2M7yT3t/cDtzsrIhw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Luvt2l4rM4xYkzoIoNWwQjzh3RbMRciThgK7x2GpDtQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="el\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="el" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>x3ZIcQcsMKbfDjL6soYwvQS2mgIsoKc0aIugR4lI/rU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Lodan4lMwEWPh4CWbHF+zPwaeAVpps+tagUuEy5Nf3I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="et\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="et" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zVP+vVn/hXsnknYMmDdjtnWQuDb+sFSAq6FTX3aOsEE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fi\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="fi" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qxoV86cwXvjCczzkQTPHxcVKGYbxf7hCjVNEHgDZRTc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HKJc1u5T1qxpZADNhHyGvrK3jdwp7oQdPf7D9VioAXs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ga\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="ga" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ObabEYch+k90bCI73gi96rLUYgeP+FdqnQSU/REOJzI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="he\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="he" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>q+xo3Bv7N8kzPigmEmVHsX5MAk/rd1srozDurG4YBQE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hi\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="hi" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KlwT0ZZ8CA0zjoH7DkeTtAe1Ruquaw7kauilt8hu90w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hr\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="hr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DmkmH2zp24qfitN9+e4Gb1550L3dRElYbEtElAXJswM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wS3/bAMposyEm/WqgMjb9WzRjsgGEEYtfI9qZSMkaCo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hy\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="hy" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VXm4i51/CkMzoeFXElelCEd4nGLg+CedtSULmvBg4hU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="is\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="is" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/3BCz8lfF5395kpVSBOkTXnaRt8aDH5EY/SmuKTHj6c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="it" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>72vtt+Bh0LR8jWUuABcMaiO55ojRkQ7mOMjFaNMmwIg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="ja" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PVEwHNN3me/gdkD4jey5SttKmwqI4neL8D9Qqu4AxjM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="kk\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="kk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KeikKGO0VfrqGJ6b2f5Py3HBmHTQbUFG0AmwffNENfQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="ko" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NnR7I4FHyqqKvbgjzJu9w8QUr2cUv8uQHPvJiFuTE2Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="lt\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="lt" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GiUQUyH4Q9jPMRlIe/TiYcMtUYVOf6cU4y7LVMK9BE0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="lv\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="lv" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FIqlQTMxdWDCEDY7DZLeLUBhNAHpiSeroWTnBVYYAw8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="no\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="no" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MCzndBVafLUO1I3p6TrUOM65YdCs8IIv1jwMmkoL0lw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pl\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="pl" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sfsaghbTsQLFaSMhkjz9knewRVIMGSIAbMKGI9xpdc8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="pt" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/TvsmKLWV8Sv92E51iXiIvMfgiK/hJ7pq3J1Bmft2lg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ro\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="ro" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rjEfnCRAG8dXGFWuGIZcif4xl6/4dybTfjFckvhqzjQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UONcMpMQ5Jo+bxrO1km6fh/Lm1fk0SNdTvGJZSrlv/o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sk\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="sk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rf06q5EI7xCMgS6u+qaniUMwiBns5IZ1MsfxhRYLRDA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sl\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="sl" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xtYCHUaQmlhTDU1TKm5IVQWKI8vQQyXVRt4VLwCs4UA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sq\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="sq" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZigWyOH+REOJDR2RONg9sgdlgwIh0pmNzuDvq0hFm70=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sr\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="sr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nQVeC8yrC3rtWGvONWX0kqKmE+wbi9tTaWw56OqGLwU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sv\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="sv" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7egL/76lSwkOvndjVoJUFGpTUPejodHFYjssAXX0Dws=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tg\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="tg" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>348jeYXSrnbIy0OCs+TuGCEt5SObtW1kwKD1vbf2oOs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aH8PWz9+6y+ZFPp+a/+kt8XMPcVRXt1Qjqu0xzXK/HM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u5mnE7pLxaLxk6nBxKXO1Z7IfvqN5qJ5Gmjw+etLe60=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uz\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="uz" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Bin3IDF88dCjm2MlT4uwAp1mS6W6swBllkT27T8AFO0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="vi" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ynm+C4+M/Al0McNg3ArPwd2rbdN2zF0tARBbrCP9gU0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh\Nemiro.OAuth.LoginForms.resources.dll" size="4096">
+      <assemblyIdentity name="Nemiro.OAuth.LoginForms.resources" version="1.4.45.1485" language="zh" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TQ0bZatDlREJPRsh/xkvgVM3UsgskbAqqOX46BTSSf4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestSharp.dll" size="165376">
+      <assemblyIdentity name="RestSharp" version="105.0.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vT+TkIZ7WlnE0+yCLhCdG0mbgsBw/UM4iuMCx1RRTGU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AES_07.exe.config" size="905">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pSVlQ0prdw7PjVzbIOnqcUNdUP85PGKu//obEwfxEnM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=BEN\Ben" issuerKeyHash="d89f3fcb711b08206e5a83a37191a4fd0e672a64" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>P1ey0Ui1lkaNDfV15UhWiIDP50Xu6gawJhYGL0O8j2s=</DigestValue></Reference></SignedInfo><SignatureValue>ZKs2MLGnkIZuCD+BirH0MfH3PXVB0m0MsGEuUNzJ+O20Okrx2N5IJ9CmPgezGx30uHaGt8LfMVvJim14P3TdzLXo6zs6rNZ4u2C56JDyVMsSfe+Pns6UkV7uPMGSC6Cjq0cKGn1S/C/+EmLyJEa7Y+O7/JwZaECDxG08b59T0nI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sx3Wo+ntlvJR9x7iCjtFGBBPs9aG4oCVNdOiqh8ZY8r+piV8XZ4Qqej2FRrG4kXaGiW98RQxSb0MUwnPyVdvhPhBslJ6HARK7vgphr0XJRxE4TKCuXPTe4fWuE3/ASGML119BI7QeNE5mzgj8ClaWVySqvRqNpubJEzigz1qKaE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6b8fbc432f061626b006eaee45e7cf80885648e575f50d8d4696b548d1b2573f" Description="" Url=""><as:assemblyIdentity name="AES_07.exe" version="1.0.0.0" publicKeyToken="e7cd42b0c7b2e5e9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BEN\Ben</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>h+/I9pTudF/YFQrushRKsHuSiwX/moI157yfW6JMJCE=</DigestValue></Reference></SignedInfo><SignatureValue>mf8xfQy6xsy6ZUk8DXUgO1F27IunK5oYOHWbdhlgL8zR5H8ybEX3ytkBljeBHnri6XAEq6s+HxWTXYGu8zpNASdqThOtyB80a1yRcMTjwhN67i4keUgZJrpY/ojfJJMEl9gSnl+H41mRzsFUxw4UV46VRwgK4lwDtVTQbqMJzf4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sx3Wo+ntlvJR9x7iCjtFGBBPs9aG4oCVNdOiqh8ZY8r+piV8XZ4Qqej2FRrG4kXaGiW98RQxSb0MUwnPyVdvhPhBslJ6HARK7vgphr0XJRxE4TKCuXPTe4fWuE3/ASGML119BI7QeNE5mzgj8ClaWVySqvRqNpubJEzigz1qKaE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBtTCCAR6gAwIBAgIQWAgviu2cpZBGlfnY23/8RDANBgkqhkiG9w0BAQsFADAZMRcwFQYDVQQDHg4AQgBFAE4AXABCAGUAbjAeFw0xNjA1MDMxMjM5NDVaFw0xNzA1MDMxODM5NDVaMBkxFzAVBgNVBAMeDgBCAEUATgBcAEIAZQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzHdaj6e2W8lH3HuIKO0UYEE+z1obigJU106KqHxljyv6mJXxdnhCp6PYVGsbiRdoaJb3xFDFJvQxTCc/JV2+E+EGyUnocBEru+CmGvRclHEThMoK5c9N7h9a4Tf8BIYwvXX0EjtB40TmbOCPwKVpZXJKq9Go2m5skTOKDPWopoQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACuJbExXCgdu22BQsTPHhUa7Ylv2JsCTN1wpk4DyMQ7Xl+/mORKYZvZW6JxvmGgbnseNBbYUmXX0fNZhsdRVvdaG83/1nAl44Sudc+0lc8qJ9jBrS8f+ZnB0WoYrp6cH07ITqoLs9VCNlljyQalpTV1TbzuFBxW3g8odwDScY06c</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
